@@ -1,165 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irha M. Khan</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irha M. Khan</title>
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #F5F0E8;
-            color: #333;
-            line-height: 1.6;
-        }
+  <!-- DM Sans (body font) -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 40px;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 60px;
-            align-items: start;
-        }
+  <!-- Canva Sans is proprietary; this line allows the family name so you can upload it locally if needed -->
+  <style>
+      <!-- Heading font similar to Canva Sans: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-        .left-section {
-            position: sticky;
-            top: 60px;
-        }
+  <style>
 
-        .profile-photo {
-            width: 100%;
-            max-width: 350px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #F5EDE6;
+      font-family: 'DM Sans', sans-serif;
+      color: #333;
+    }
 
-        .right-section {
-            padding-top: 20px;
-        }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      padding: 60px 0;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
 
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #000;
-        }
+    .photo img {
+      width: 420px;
+      border-radius: 6px;
+      display: block;
+      margin: 0 auto;
+    }
 
-        nav {
-            margin-bottom: 20px;
-        }
+    .content {
+      max-width: 520px;
+    }
 
-        nav a {
-            color: #8B5CF6;
-            text-decoration: none;
-            margin-right: 5px;
-            transition: opacity 0.3s ease;
-        }
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 48px;
+      margin: 0 0 10px 0;
+    }
 
-        nav a:hover {
-            opacity: 0.7;
-        }
+    .nav {
+      margin-bottom: 25px;
+    }
 
-        nav a.active {
-            font-weight: 600;
-        }
+    .nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #7A4E7A;
+      font-weight: 500;
+    }
 
-        .separator {
-            color: #8B5CF6;
-            margin: 0 5px;
-        }
-
-        .social-icons {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .social-icons a {
-            color: #333;
-            font-size: 1.5rem;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: #8B5CF6;
-        }
-
-        .content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .content p {
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr;
-                gap: 40px;
-                padding: 40px 20px;
-            }
-
-            .left-section {
-                position: static;
-                text-align: center;
-            }
-
-            .profile-photo {
-                max-width: 250px;
-            }
-
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            .right-section {
-                padding-top: 0;
-            }
-        }
-    </style>
+    p {
+      line-height: 1.6;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="left-section">
-            <img src="profile.jpg" alt="Irha M. Khan" class="profile-photo">
-        </div>
-        
-        <div class="right-section">
-            <h1>irha m. khan</h1>
-            
-            <nav>
-                <a href="index.html" class="active">about me</a>
-                <span class="separator">|</span>
-                <span class="separator">|</span>
-                <a href="cv.html">cv</a>
-            </nav>
-            
-            <div class="social-icons">
-                <a href="mailto:irhamateenkhan@gmail.com" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/irhakhan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-            
-            <div class="content">
-                <p>I am a recent BSc (Hons) graduate from Heriot-Watt University with a strong interest in human cognition and its intersections with other domains. I am currently preparing MSc applications in integrative neuroscience, where I aim to further explore the mechanisms underlying brain-behavior relationships using data-driven methods.</p>
-                
-                <p>My research experience spans cognitive, social, and educational psychology. I have independently developed proficiency in R and Python, and I am currently expanding my skills with MATLAB.</p>
-                
-                <p>As I prepare for postgraduate study, I am eager to contribute to neuroscience and cognition-focused projects. I am particularly interested in gaining hands-on experience with computational modelling and neuroimaging. I am also open to interdisciplinary research that applies these methods across neuroscience, cognitive science, or technology to explore novel questions about the mind and brain.</p>
-            </div>
-        </div>
+
+  <div class="container">
+
+    <div class="photo">
+      <img src="your-image.jpg" alt="Photo" />
     </div>
+
+    <div class="content">
+      <h1>irha m. khan</h1>
+
+      <div class="nav">
+        <a href="#">about me</a>
+        <a href="cv.pdf" target="_blank">cv</a>
+      </div>
+
+      <p>I am a recent BSc (Hons) graduate from Heriot-Watt University with a strong interest in human cognition and its intersections with other domains. I am currently preparing MSc applications in integrative neuroscience, where I aim to further explore the mechanisms underlying brain–behavior relationships using data–driven methods. <strong>(updated)</strong></p>
+
+      <p>My research experience spans cognitive, social, and educational psychology. I have independently developed proficiency in R and Python, and I am currently expanding my skills with MATLAB.</p>
+
+      <p>As I prepare for postgraduate study, I am eager to contribute to neuroscience and cognition–focused projects. I am particularly interested in gaining hands–on experience with <strong>computational modelling</strong> and <strong>neuroimaging</strong>. I am also open to interdisciplinary research that applies these methods across neuroscience, cognitive science, or technology to explore novel questions about the mind and brain.</p>
+    </div>
+
+  </div>
+
 </body>
 </html>
